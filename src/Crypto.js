@@ -10,8 +10,6 @@ function Crypto() {
   const connection = useRef(null);
   const priceUpdateCount = useRef(0);
 
-  console.log(priceUpdateCount);
-
   useEffect(() => {
     const socket = new WebSocket("wss://socket.polygon.io/crypto");
 
